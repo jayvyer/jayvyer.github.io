@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body style = "background-color: #282c34">
+	<div id="words" class="row" style="opacity: 1; display: hidden;">
+		<div id="row1" style="top: 1px; display: block;">
+			<script src = "https://combinatronics.com/jayvyer/jayvyer.github.io/master/functions.js"></script>
+			<script type="text/javascript"> wordGenerate() </script>
+		</div>
+	</div>
+	<br>
+	<div id="input-row" class="row">
+		<div style="max-width: 590px; margin: auto;">
+			<div>
+				<input type="text" class="form-control" id="inputfield" value="" dir="ltr" placeholder="" onkeypress="startTimer()" oninput="handle(this.value)">
+				<script src = "https://combinatronics.com/jayvyer/jayvyer.github.io/master/functions.js"></script>
+				<script type="text/javascript"> handle() </script>
+			</div>
+			<div style="float:right; width: 130px; margin-top: -50px;">
+				<div style="width: 70px;float: left; margin-right: 10px;cursor: pointer;cursor: hand;" id="timer" class="notStarted" >60</div>
+				<div style="width: 50px; float: left;  display:block;"><button type="button" class="btn btn-primary btn-lg" id="reload-btn" onClick="window.location.reload();"> <span class="glyphicon glyphicon-refresh"></span></button></div>
+			</div>
+		</div>
+	</div>
+	<div id="result" class="col-md-6" style="display: hidden;">
+		<h3 id="wpmdisplay" class="wpmdisplayclass"> poopoo doodoo </h3>
+		<table class="table table-striped" id="result-table">
+			<tbody>
+				<tr><td class="name1" >Correct words</td><td class="name2" id="wordstypedcorrect"> 0</td></tr>
+				<tr><td class="name3">Incorrect words</td><td class="name4" id="wordstypedwrong"> 0</td></tr>
+			</tbody>
+		</table>
+	</div>
+<br>
+<div id="picture">
+	<canvas id="canvas" width="769" height="477"></canvas>
+	<script src = "https://combinatronics.com/jayvyer/jayvyer.github.io/master/functions.js"></script>
+	<script type="text/javascript"> setupCanvas(0.01) </script>
+</div>
+</body>
+</html>
