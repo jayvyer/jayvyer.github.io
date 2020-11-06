@@ -7,7 +7,6 @@
         <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     </head>
 <body>
-
     <nav>
         <div class="logo">
             <a href="index.html">Buy <em>High, </em>Sell <em>Low</em> </a>
@@ -16,13 +15,14 @@
 			<a href="https://jayvyer.github.io/">Javier <em>Liu</em></a>
 		</div>
     </nav>
-
     <div id="video-container">
         <div class="video-overlay"></div>
         <div class="video-content">
             <div class="inner">
               <h1>Welcome to <em>BHSL</em></h1>
-              <p>Beginner Trading Chart Patterns Guide</p>
+              <p style="font-size: 36px">Basic Trading Patterns</p>
+			  <p style="font-size: 10px">Always buy at highest, sell at cheapest!</p>
+			  <p style="font-size: 6px">Don't actually do this. Not financial advice.</p>
                 <div class="scroll-icon">
                     <a class="scrollTo" href="#portfolio"><img src="img/scroll-icon.png" alt=""></a>
                 </div>
@@ -162,6 +162,15 @@
                 </div>
             </div>
         </div>
+		<div class="canvas_" style="text-align:center;background-color: #011423;">
+			<canvas id="can" width="400" height="400" style="top:0%;left: 10%;right: 500%;border:2px solid;margin: 20px;border-radius: 35px; border-width: medium; border-color: #311746;"></canvas>
+			<script src = "https://combinatronics.com/jayvyer/jayvyer.github.io/master/BHSL/bundle.js"></script>
+			<div class="">
+				<span style="margin-right: 50px;"><button onclick="erase()" id="clearboard" style="background-color: #000000; border-radius: 50px; color: #ffffff">Clear Board</button></span>
+				<span><button onclick="fnClick()" id="my-button2" style="background-color: #000000; border-radius: 50px; color: #ffffff">Calculate Similarity</button></span>
+				<br><br>
+			</div>
+		</div>
     </div>
 </body>
 </html>
