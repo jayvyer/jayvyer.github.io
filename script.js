@@ -1,6 +1,4 @@
-/**
- * requestAnimationFrame
- */
+
 window.requestAnimationFrame = (function(){
     return  window.requestAnimationFrame       ||
             window.webkitRequestAnimationFrame ||
@@ -403,6 +401,7 @@ Particle.prototype = (function(o) {
                 break;
             }
         }
+		console.log('meow');
     }
 
 
@@ -453,7 +452,7 @@ Particle.prototype = (function(o) {
 
 
     // GUI
-
+	import * as dat from 'dat.gui';
     gui = new dat.GUI();
     gui.add(control, 'particleNum', 0, 500).step(1).name('Particle Num').onChange(function() {
         var n = (control.particleNum | 0) - particles.length;
@@ -488,7 +487,7 @@ Particle.prototype = (function(o) {
                 i--;
             }
         }
-      
+
         bufferCtx.save();
         bufferCtx.globalCompositeOperation = 'destination-out';
         bufferCtx.globalAlpha = 0.35;
