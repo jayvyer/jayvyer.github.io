@@ -5,5 +5,7 @@ For example, enter jayvyer.github.io/BHSL
 Have a good one.
 
 PS: This gravity page is directly from Akimitsu Hamamuro. I just thought it was cool. All credits to him.
+
 https://codepen.io/akm2
+
 https://codepen.io/akm2/full/rHIsa
